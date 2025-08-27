@@ -11,6 +11,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/og-cover.png" />
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -43,7 +46,6 @@
           <p class="lead">Интенсивная языковая «лаборатория» для тех, кто готов сделать качественный рывок: <b>Complete Advanced 2nd Edition</b> + интерактивная доска <b>Holst</b> + практики, которые работают в жизни.</p>
           <div class="cta-row">
             <a class="btn btn-primary btn-lg" href="#apply">👉 Записаться на курс</a>
-            <button class="btn btn-ghost btn-lg" id="copy-cta" data-copy="Хочу Fusion!">Написать «Хочу Fusion!»</button>
           </div>
           <p class="places">📌 <b>Места ограничены</b> — набор открыт.</p>
         </div>
@@ -126,59 +128,9 @@
         <h2>✅ Готовы к следующему уровню?</h2>
         <p class="lead">Присоединяйтесь к Fluent Fusion Lab и начинайте говорить свободно уже сегодня.</p>
 
-        <form id="apply-form" class="apply-form" aria-describedby="privacy-note">
-          <div class="form-row">
-            <label for="name">Имя</label>
-            <input id="name" name="name" type="text" placeholder="Ваше имя" required>
-          </div>
-          <div class="form-row two">
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" required>
-            </div>
-            <div>
-              <label for="contact">Telegram / WhatsApp</label>
-              <input id="contact" name="contact" type="text" placeholder="@username или номер">
-            </div>
-          </div>
-          <div class="form-row two">
-            <div>
-              <label for="level">Текущий уровень</label>
-              <select id="level" name="level" required>
-                <option value="">Выберите...</option>
-                <option>B1+</option>
-                <option selected>B2</option>
-                <option>B2+</option>
-                <option>C1</option>
-              </select>
-            </div>
-            <div>
-              <label for="time">Предпочтительное время</label>
-              <select id="time" name="time">
-                <option value="">Не важно</option>
-                <option>Будни — утро</option>
-                <option>Будни — вечер</option>
-                <option>Выходные</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row">
-            <label for="message">Сообщение</label>
-            <textarea id="message" name="message" rows="4" placeholder="Коротко о целях и ожиданиях"></textarea>
-          </div>
-          <div class="form-row agree">
-            <label>
-              <input type="checkbox" id="agree" required>
-              Я согласен(на) на обработку данных и получение писем.
-            </label>
-          </div>
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary btn-lg">Отправить заявку</button>
-            <a class="btn btn-ghost" href="mailto:team@fluentfusion.example?subject=Заявка%20на%20Fluent%20Fusion%20Lab&body=Здравствуйте!%20Хочу%20записаться%20на%20курс." rel="nofollow">Написать на email</a>
-          </div>
-          <p id="privacy-note" class="privacy">Мы никогда не передаём ваши данные третьим лицам.</p>
-          <p id="form-success" class="form-success" role="status" aria-live="polite" hidden>Спасибо! Заявка сформирована — откроется письмо в вашем почтовом клиенте.</p>
-        </form>
+        <div class="contact-card">
+          <p>Свяжитесь со мной в Telegram: <a href="https://t.me/example" target="_blank" rel="noopener noreferrer">@example</a></p>
+        </div>
       </div>
     </section>
   </main>
